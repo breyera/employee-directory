@@ -1,8 +1,8 @@
 import React from "react";
 import API from "./utils/API";
 import Navbar from "./components/Navbar";
-import Directory from "./components/Directory";
-import Footer from "./components/Footer";
+import Directory from "./components/Directory/";
+import Footer from "./components/Footer/";
 import "./App.css";
 
 class App extends React.Component {
@@ -30,7 +30,7 @@ class App extends React.Component {
       sortList = sortList.reverse();
       toggle === "dn"
         ? this.setState({ toggle: "up" })
-        : this.setState({ toggle: "dn " });
+        : this.setState({ toggle: "dn" });
     }
     this.setState({ sortList: sortList });
   };

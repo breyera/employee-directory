@@ -2,7 +2,7 @@ import React from "react";
 import ListItem from "../../components/ListItem";
 
 function Directory(props) {
-  const users = props.search ? props.sortlist : props.user;
+  const users = props.search ? props.sortList : props.users;
   return (
     <div className="container-fluid">
       <table className="table table-hover">
@@ -11,6 +11,7 @@ function Directory(props) {
             <th scope="col">#</th>
             <th scope="col">Photo</th>
             <th scope="col">
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
               <a
                 className="clickable"
                 onClick={(e) => {
