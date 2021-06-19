@@ -29,7 +29,7 @@ class App extends React.Component {
     } else {
       sortList = sortList.reverse();
       toggle === "dn"
-        ? this.setState({ toggle: up })
+        ? this.setState({ toggle: "up" })
         : this.setState({ toggle: "dn " });
     }
     this.setState({ sortList: sortList });
